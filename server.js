@@ -7,4 +7,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 
-// Wh
+// When user first runs in their browser, send them to start.
+app.get("/", (req, res) => {
+    res.send()
+});
