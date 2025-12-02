@@ -65,15 +65,25 @@ app.post("/signup", (req, res) => {
 // For when the user has just tried to login.
 app.post("/login", (req, res) => {
     // Need the list of all users to help validate.
+    const userList = getUserList();
+
     // Get the username and password the user has entered.
     const myUsername = req.body.username;
     const myPassword = req.body.password;
 
     // ***TODO:
     // Verify that the username and password match one of the entries in users.json.
+    // Loop over all existing users.
+    for (user of userList) {
+        const currName = user.username;
+        const currPwd = user.password;
+        // If username and password match an entry, send user to the main catalog page.
+        if (currName === myUsername && currPwd === myPassword) {
+            res.sendFile(path.join(__dirname, "catalog.html"));
+        }
+    }
+    // At this point the user entered invalid credentials. Need to go back to the login page.
+    // TODO: Also need to tell them they entered something invalid.
 
-    // For every obj in users.json, if user.username === myUsername, check if myPassword === user.password.
-
-    // If so, app.sendFile() to catalog.html like with /login.
 });
 
