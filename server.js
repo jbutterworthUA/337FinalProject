@@ -9,5 +9,6 @@ const path = require("path");
 
 // When user first runs in their browser, send them to start.
 app.get("/", (req, res) => {
-    res.send()
+    res.sendFile(path.join(__dirname, "start.html"))
 });
+
