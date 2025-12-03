@@ -2,3 +2,47 @@
     File: catalog.html
     Desc: The page that will display all available movies the user can add to their watchlist.
 -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Catalog</title>
+    </head>
+    <body>
+        <a href="./start.html">Log Out</a>
+        <h1>Movie Catalog</h1>
+        <h2>Browse and bookmark movies to add to your watchlist</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th><th>Genre</th><th>Description</th>
+                </tr>
+            </thead>
+            <tbody id="myTable"></tbody>
+        </table>
+
+        <script>
+            function fillTable() {
+                // Get all the movies from catalog.json.
+                fetch("/databases/catalog.json")
+                    .then((response) => response.json())
+                    .then(function(movieList) {
+                        const myTable = document.getElementById("myTable");
+                        // Loop over every movieObj, make a tr for it, put td in the tr and add it.
+                        for (let i=0; i<movieList.length; i++) {
+                            movieObj = movieList[i];
+                            // Only list it in the catalog if the movie is flagged FALSE (meaning user has not bookmarked it for watchlist.)
+                            if (!movieObj.flagged) {
+                                const row = document.createElement("tr");
+                            row.innerHTML = `
+                                <td>${movieObj.title}</td><td>${movieObj.genre}</td><td>${movieObj.description}</td>
+                            `;
+                            myTable.appendChild(row);
+                            } 
+                        }
+                    })
+                    .catch(error => console.error("There was an error fetching the catalog."));
+            }
+            fillTable();
+        </script>
+    </body>
+</html>

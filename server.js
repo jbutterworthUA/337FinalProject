@@ -43,13 +43,22 @@ app.post("/signup", (req, res) => {
     const userList = getUserList();
 
     // Get the username and password for the account user just created.
-    const myUsername = req.body.username;
-    const myPassword = req.body.password;
+    const newUsername = req.body.username;
+    const newPassword = req.body.password;
 
-    // ***TODO: Add the new user info to users.json.
+    // ***TODO: If the username already exists, then they need to do it again.
+    // Rn this will just send back to the signup page without saying why.
+    for (user of userList) {
+        const currName = user.username;
+        if (currName === newUsername) {
+            res.sendFile(path.join(__dirname, "signup.html"));
+        }
+    }
+
+    // Add the new user info to users.json.
     const myUserObj = {
-        username: myUsername,
-        password: myPassword
+        username: newUsername,
+        password: newPassword
     }
 
     // Add the new userObj to the list of users.
@@ -71,7 +80,6 @@ app.post("/login", (req, res) => {
     const myUsername = req.body.username;
     const myPassword = req.body.password;
 
-    // ***TODO:
     // Verify that the username and password match one of the entries in users.json.
     // Loop over all existing users.
     for (user of userList) {
@@ -83,7 +91,10 @@ app.post("/login", (req, res) => {
         }
     }
     // At this point the user entered invalid credentials. Need to go back to the login page.
-    // TODO: Also need to tell them they entered something invalid.
-
+    // TODO: Also need to tell them they entered something invalid. ***
+    res.sendFile(path.join(__dirname, "login.html"));
 });
 
+// That should be all of the app.posts(). Everything else should be hrefs to jump btwn pages, plus logout button to send back to start.html.
+
+app.listen(3000, () => {console.log("Server running on http://localhost:3000")});
