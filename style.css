@@ -1,34 +1,36 @@
 body {
     padding: 20px;
     font-family: Arial, sans-serif;
-    background-color: #A6BEFF;
+    background-color: #0B2E33;
+    color: #B8E3E9
 }
 
 h1, h2, p {
     text-align: center;
-    color: #333;
+    color: #B8E3E9;
 }
 
 a {
     display: block;
     text-align: center;
     margin: 5px 0;
+    color: #B8E3E9
 }
 
 table {
     width: 80%;
     margin: 20px auto;
     border-collapse: collapse;
-    background-color: #fff;
+    background-color: #0B2E33;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
 th, td {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #B8E3E9;
     text-align: left;
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: #0B2E33;
 }
