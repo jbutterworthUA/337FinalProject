@@ -57,7 +57,7 @@ app.post("/signup", (req, res) => {
     for (let user of userList) {
         const currName = user.username;
         if (currName === newUsername) {
-            return res.sendFile(path.join(__dirname, "signup.html"));
+            return res.redirect(`/signup?error=iv`);
         }
     }
 
@@ -86,6 +86,11 @@ app.post("/signup", (req, res) => {
     return res.redirect(`/catalog?username=${newUsername}`);
 });
 
+// Signup needs a GET bc the redirect with error msg will do a GET request.
+app.get("/signup", (req, res) => {
+    res.sendFile(path.join(__dirname, "signup.html"));
+});
+
 // For when the user has just tried to login.
 app.post("/login", (req, res) => {
     // Need the list of all users to help validate.
@@ -103,16 +108,26 @@ app.post("/login", (req, res) => {
         // If username and password match an entry, send user to the main catalog page.
         if (currName === myUsername && currPwd === myPassword) {
             // TODO: Possibly change how to keep track of logged in user instead of having res.redirect. *****
-            return res.redirect(`/catalog?username=${myUsername}`);
+            return res.redirect(`/catalog?user=${myUsername}`);
         }
     }
     // At this point the user entered invalid credentials. Need to go back to the login page.
-    // TODO: Also need to tell them they entered something invalid. ***
-    return res.sendFile(path.join(__dirname, "login.html"));
+    // Need to tell them they entered something invalid. iv for invalid.
+    return res.redirect(`/login?error=iv`);
 });
+
+// Login needs a GET bc the redirect with error msg will do a GET request.
+app.get("/login", (req, res) => {
+    res.sendFile(path.join(__dirname, "login.html"));
+});
+
 
 app.get("/catalog", (req, res) => {
     return res.sendFile(path.join(__dirname, "catalog.html"));
+});
+
+app.get("/watchlist", (req, res) => {
+    return res.sendFile(path.join(__dirname, "watchlist.html"));
 });
 
 app.listen(3000, () => {console.log("Server running on http://localhost:3000")});

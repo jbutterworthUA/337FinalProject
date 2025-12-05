@@ -17,6 +17,18 @@ a {
     color: #B8E3E9
 }
 
+form {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: center;
+}
+
+
 table {
     width: 80%;
     margin: 20px auto;
