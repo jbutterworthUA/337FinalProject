@@ -33,8 +33,7 @@
         <script>
             function fillTable() {
                 // Get all the movies from the logged in user's catalog.json. (So we know the movies they haven't flagged.)
-                const myParams = new URLSearchParams(window.location.search);
-                const currentUser = myParams.get("user");
+                const currentUser = localStorage.getItem("currentUser");
                 fetch(`/databases/user_catalogs/${currentUser}_catalog.json`)
                     .then((response) => response.json())
                     .then(function(movieList) {

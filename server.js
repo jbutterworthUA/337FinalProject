@@ -82,8 +82,13 @@ app.post("/signup", (req, res) => {
     fs.writeFileSync(`databases/user_catalogs/${newUsername}_catalog.json`, masterCatalog);
 
     // Now that info has been saved, send the user to the main catalog page.
-    // TODO: Possibly change how to keep track of logged in user instead of having res.redirect. *****
-    return res.redirect(`/catalog?username=${newUsername}`);
+    // Going to make it so that localStorage keeps track of current user.
+    return res.send(`
+        <script>
+            localStorage.setItem("currentUser", "${newUsername}");
+            window.location.href = "/catalog";
+        </script>
+    `);
 });
 
 // Signup needs a GET bc the redirect with error msg will do a GET request.
@@ -107,8 +112,13 @@ app.post("/login", (req, res) => {
         const currPwd = user.password;
         // If username and password match an entry, send user to the main catalog page.
         if (currName === myUsername && currPwd === myPassword) {
-            // TODO: Possibly change how to keep track of logged in user instead of having res.redirect. *****
-            return res.redirect(`/catalog?user=${myUsername}`);
+            // Going to make it so that localStorage keeps track of current user.
+            return res.send(`
+                <script>
+                    localStorage.setItem("currentUser", "${myUsername}");
+                    window.location.href = "/catalog";
+                </script>
+            `);
         }
     }
     // At this point the user entered invalid credentials. Need to go back to the login page.
