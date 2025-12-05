@@ -46,3 +46,9 @@ th, td {
 th {
     background-color: #0B2E33;
 }
+
+.menu-bar {
+    display: flex; 
+    gap: 15px; 
+    margin-bottom: 15px;
+}
