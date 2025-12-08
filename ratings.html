@@ -36,7 +36,7 @@
                         const table = document.getElementById("ratedMoviesTable");
 
                         for (let movie of catalog) {
-                            if (movie.flagged) {
+                            if (movie.rating != 0) {
                                 const row = document.createElement("tr");
                                 
                                 row.innerHTML = `

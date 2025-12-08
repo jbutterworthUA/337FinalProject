@@ -156,8 +156,9 @@ app.post("/removeFromWatchlist", (req, res) => {
     const filePath = `databases/user_catalogs/${user}_catalog.json`;
 
     fs.readFile(filePath, "utf8", (err, data) => {
-        if (err) { 
-            return res.status(500).json({ error: "Failed to read file" }); 
+        if (err) {
+            console.error("Failed to read file:", err);
+            return res.status(500).json({ error: "Failed to read file" });
         }
 
         let catalog = JSON.parse(data);
@@ -165,7 +166,7 @@ app.post("/removeFromWatchlist", (req, res) => {
 
         for (let movie of catalog) {
             if (movie.title === title) {
-                movie.flagged = false;
+                movie.flagged = true;
                 movie.rating = rating;
                 found = true;
                 break;
@@ -173,11 +174,13 @@ app.post("/removeFromWatchlist", (req, res) => {
         }
 
         if (!found) {
+            console.error(`${title} not found in catalog.`);
             return res.status(404).json({ error: "Movie not found" });
         }
 
         fs.writeFile(filePath, JSON.stringify(catalog, null, 2), err => {
-            if (err) { 
+            if (err) {
+                console.error("Failed to save file:", err);
                 return res.status(500).json({ error: "Failed to save file" });
             }
 
@@ -185,6 +188,7 @@ app.post("/removeFromWatchlist", (req, res) => {
         });
     });
 });
+
 
 
 // Login needs a GET bc the redirect with error msg will do a GET request.
