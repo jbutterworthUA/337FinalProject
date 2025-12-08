@@ -1,0 +1,878 @@
+[
+  {
+    "title": "The Shawshank Redemption",
+    "genre": "Drama",
+    "description": "A banker forms a life-changing friendship in prison.",
+    "flagged": true
+  },
+  {
+    "title": "The Godfather",
+    "genre": "Crime",
+    "description": "A mafia family struggles for power and loyalty.",
+    "flagged": false
+  },
+  {
+    "title": "The Dark Knight",
+    "genre": "Action",
+    "description": "Batman faces the Joker in a battle for Gotham.",
+    "flagged": false
+  },
+  {
+    "title": "Pulp Fiction",
+    "genre": "Crime",
+    "description": "Intertwined crime tales unfold in nonlinear style.",
+    "flagged": false
+  },
+  {
+    "title": "Inception",
+    "genre": "Sci-Fi",
+    "description": "A thief enters dreams to plant an idea.",
+    "flagged": false
+  },
+  {
+    "title": "Fight Club",
+    "genre": "Drama",
+    "description": "An insomniac forms an underground fight club.",
+    "flagged": false
+  },
+  {
+    "title": "Forrest Gump",
+    "genre": "Drama",
+    "description": "A simple man experiences extraordinary moments.",
+    "flagged": false
+  },
+  {
+    "title": "The Matrix",
+    "genre": "Sci-Fi",
+    "description": "A hacker learns the truth about reality.",
+    "flagged": true
+  },
+  {
+    "title": "Interstellar",
+    "genre": "Sci-Fi",
+    "description": "Astronauts travel through a wormhole to save humanity.",
+    "flagged": false
+  },
+  {
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "genre": "Fantasy",
+    "description": "A hobbit begins a quest to destroy a powerful ring.",
+    "flagged": false
+  },
+  {
+    "title": "The Lord of the Rings: The Two Towers",
+    "genre": "Fantasy",
+    "description": "The fellowship fights on as evil grows stronger.",
+    "flagged": false
+  },
+  {
+    "title": "The Lord of the Rings: The Return of the King",
+    "genre": "Fantasy",
+    "description": "The final battle for Middle-earth begins.",
+    "flagged": false
+  },
+  {
+    "title": "Star Wars: A New Hope",
+    "genre": "Sci-Fi",
+    "description": "A farm boy joins the fight against the Empire.",
+    "flagged": false
+  },
+  {
+    "title": "Star Wars: The Empire Strikes Back",
+    "genre": "Sci-Fi",
+    "description": "The Rebels suffer a major setback from the Empire.",
+    "flagged": false
+  },
+  {
+    "title": "Star Wars: Return of the Jedi",
+    "genre": "Sci-Fi",
+    "description": "Luke confronts Darth Vader to save the galaxy.",
+    "flagged": false
+  },
+  {
+    "title": "Gladiator",
+    "genre": "Action",
+    "description": "A betrayed general seeks revenge as a gladiator.",
+    "flagged": false
+  },
+  {
+    "title": "Saving Private Ryan",
+    "genre": "War",
+    "description": "Soldiers search for a missing brother in WWII.",
+    "flagged": false
+  },
+  {
+    "title": "Titanic",
+    "genre": "Romance",
+    "description": "A tragic romance unfolds aboard a doomed ship.",
+    "flagged": false
+  },
+  {
+    "title": "Jurassic Park",
+    "genre": "Adventure",
+    "description": "Dinosaurs are brought to life with disastrous results.",
+    "flagged": false
+  },
+  {
+    "title": "Avatar",
+    "genre": "Sci-Fi",
+    "description": "A soldier joins a native tribe on an alien world.",
+    "flagged": false
+  },
+  {
+    "title": "The Avengers",
+    "genre": "Action",
+    "description": "Earth's mightiest heroes unite to stop an invasion.",
+    "flagged": false
+  },
+  {
+    "title": "Avengers: Infinity War",
+    "genre": "Action",
+    "description": "Heroes battle Thanos for the fate of the universe.",
+    "flagged": false
+  },
+  {
+    "title": "Avengers: Endgame",
+    "genre": "Action",
+    "description": "The survivors attempt to reverse Thanos’ snap.",
+    "flagged": false
+  },
+  {
+    "title": "Iron Man",
+    "genre": "Action",
+    "description": "A billionaire builds a suit to become a hero.",
+    "flagged": false
+  },
+  {
+    "title": "Spider-Man: No Way Home",
+    "genre": "Action",
+    "description": "Spider-Man faces multiverse-shaking consequences.",
+    "flagged": false
+  },
+  {
+    "title": "Black Panther",
+    "genre": "Action",
+    "description": "A king protects his nation from new threats.",
+    "flagged": false
+  },
+  {
+    "title": "Guardians of the Galaxy",
+    "genre": "Sci-Fi",
+    "description": "Misfits band together to save the galaxy.",
+    "flagged": false
+  },
+  {
+    "title": "Doctor Strange",
+    "genre": "Fantasy",
+    "description": "A surgeon learns mystic arts to fight dark forces.",
+    "flagged": false
+  },
+  {
+    "title": "Deadpool",
+    "genre": "Action",
+    "description": "A mercenary seeks revenge with healing powers.",
+    "flagged": false
+  },
+  {
+    "title": "Logan",
+    "genre": "Action",
+    "description": "An aging Wolverine protects a young mutant.",
+    "flagged": false
+  },
+  {
+    "title": "The Lion King",
+    "genre": "Animation",
+    "description": "A young lion must reclaim his rightful throne.",
+    "flagged": false
+  },
+  {
+    "title": "Toy Story",
+    "genre": "Animation",
+    "description": "A group of toys come to life when humans aren’t around.",
+    "flagged": false
+  },
+  {
+    "title": "Finding Nemo",
+    "genre": "Animation",
+    "description": "A father fish searches for his missing son.",
+    "flagged": false
+  },
+  {
+    "title": "Up",
+    "genre": "Animation",
+    "description": "An old man fulfills his dream with a flying house.",
+    "flagged": false
+  },
+  {
+    "title": "Inside Out",
+    "genre": "Animation",
+    "description": "A girl’s emotions guide her through big changes.",
+    "flagged": false
+  },
+  {
+    "title": "Monsters, Inc.",
+    "genre": "Animation",
+    "description": "Monsters discover laughter is more powerful than fear.",
+    "flagged": false
+  },
+  {
+    "title": "The Incredibles",
+    "genre": "Animation",
+    "description": "A family of superheroes returns from retirement.",
+    "flagged": false
+  },
+  {
+    "title": "Shrek",
+    "genre": "Animation",
+    "description": "An ogre embarks on a quest to rescue a princess.",
+    "flagged": false
+  },
+  {
+    "title": "Coco",
+    "genre": "Animation",
+    "description": "A boy journeys through the Land of the Dead.",
+    "flagged": false
+  },
+  {
+    "title": "Zootopia",
+    "genre": "Animation",
+    "description": "A rookie cop teams up with a fox to solve a mystery.",
+    "flagged": true
+  },
+  {
+    "title": "Frozen",
+    "genre": "Animation",
+    "description": "Two sisters confront magic, danger, and destiny.",
+    "flagged": false
+  },
+  {
+    "title": "Moana",
+    "genre": "Animation",
+    "description": "A young navigator voyages to save her island.",
+    "flagged": false
+  },
+  {
+    "title": "Aladdin",
+    "genre": "Animation",
+    "description": "A street thief discovers a magical genie.",
+    "flagged": false
+  },
+  {
+    "title": "Beauty and the Beast",
+    "genre": "Animation",
+    "description": "A young woman falls for a cursed prince.",
+    "flagged": false
+  },
+  {
+    "title": "Mulan",
+    "genre": "Animation",
+    "description": "A girl disguises herself to save her father.",
+    "flagged": false
+  },
+  {
+    "title": "The Little Mermaid",
+    "genre": "Animation",
+    "description": "A mermaid dreams of life on land.",
+    "flagged": false
+  },
+  {
+    "title": "Ratatouille",
+    "genre": "Animation",
+    "description": "A rat becomes an unlikely Parisian chef.",
+    "flagged": false
+  },
+  {
+    "title": "Brave",
+    "genre": "Animation",
+    "description": "A princess fights to undo a family curse.",
+    "flagged": false
+  },
+  {
+    "title": "WALL-E",
+    "genre": "Animation",
+    "description": "A lonely robot discovers love and hope.",
+    "flagged": false
+  },
+  {
+    "title": "Kung Fu Panda",
+    "genre": "Animation",
+    "description": "A clumsy panda becomes an unexpected warrior.",
+    "flagged": false
+  },
+  {
+    "title": "The Hunger Games",
+    "genre": "Adventure",
+    "description": "A girl fights for survival in a deadly competition.",
+    "flagged": false
+  },
+  {
+    "title": "The Maze Runner",
+    "genre": "Adventure",
+    "description": "Teens must escape a giant, shifting maze.",
+    "flagged": false
+  },
+  {
+    "title": "Divergent",
+    "genre": "Adventure",
+    "description": "A girl challenges a rigid faction-based society.",
+    "flagged": false
+  },
+  {
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "genre": "Fantasy",
+    "description": "A boy discovers he’s a wizard.",
+    "flagged": false
+  },
+  {
+    "title": "Harry Potter and the Chamber of Secrets",
+    "genre": "Fantasy",
+    "description": "A dark force threatens Hogwarts again.",
+    "flagged": false
+  },
+  {
+    "title": "Harry Potter and the Prisoner of Azkaban",
+    "genre": "Fantasy",
+    "description": "A dangerous fugitive escapes and seeks Harry.",
+    "flagged": false
+  },
+  {
+    "title": "Harry Potter and the Goblet of Fire",
+    "genre": "Fantasy",
+    "description": "Harry competes in a deadly tournament.",
+    "flagged": false
+  },
+  {
+    "title": "Harry Potter and the Order of the Phoenix",
+    "genre": "Fantasy",
+    "description": "Harry trains students to resist dark forces.",
+    "flagged": false
+  },
+  {
+    "title": "Harry Potter and the Half-Blood Prince",
+    "genre": "Fantasy",
+    "description": "Harry uncovers Voldemort’s past.",
+    "flagged": false
+  },
+  {
+    "title": "Harry Potter and the Deathly Hallows: Part 1",
+    "genre": "Fantasy",
+    "description": "Harry hunts Horcruxes with his friends.",
+    "flagged": false
+  },
+  {
+    "title": "Harry Potter and the Deathly Hallows: Part 2",
+    "genre": "Fantasy",
+    "description": "The final battle for Hogwarts begins.",
+    "flagged": false
+  },
+  {
+    "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "genre": "Adventure",
+    "description": "A pirate and a blacksmith rescue a kidnapped woman.",
+    "flagged": false
+  },
+  {
+    "title": "The Bourne Identity",
+    "genre": "Action",
+    "description": "An amnesiac spy searches for his true identity.",
+    "flagged": false
+  },
+  {
+    "title": "John Wick",
+    "genre": "Action",
+    "description": "A retired assassin seeks vengeance.",
+    "flagged": false
+  },
+  {
+    "title": "Mad Max: Fury Road",
+    "genre": "Action",
+    "description": "Survivors flee a warlord across the wasteland.",
+    "flagged": false
+  },
+  {
+    "title": "Dune",
+    "genre": "Sci-Fi",
+    "description": "A young heir faces destiny on a desert planet.",
+    "flagged": true
+  },
+  {
+    "title": "Blade Runner 2049",
+    "genre": "Sci-Fi",
+    "description": "A replicant uncovers a dangerous secret.",
+    "flagged": false
+  },
+  {
+    "title": "The Terminator",
+    "genre": "Sci-Fi",
+    "description": "A cyborg is sent back to kill a woman.",
+    "flagged": false
+  },
+  {
+    "title": "Terminator 2: Judgment Day",
+    "genre": "Sci-Fi",
+    "description": "A reprogrammed cyborg protects humanity’s future.",
+    "flagged": false
+  },
+  {
+    "title": "Alien",
+    "genre": "Horror",
+    "description": "A crew battles a deadly extraterrestrial creature.",
+    "flagged": false
+  },
+  {
+    "title": "Aliens",
+    "genre": "Sci-Fi",
+    "description": "Marines face a hive of lethal aliens.",
+    "flagged": false
+  },
+  {
+    "title": "Predator",
+    "genre": "Action",
+    "description": "Soldiers are hunted by an invisible alien.",
+    "flagged": false
+  },
+  {
+    "title": "Rocky",
+    "genre": "Sports",
+    "description": "An underdog boxer gets a shot at glory.",
+    "flagged": false
+  },
+  {
+    "title": "Creed",
+    "genre": "Sports",
+    "description": "Apollo Creed's son trains to follow his legacy.",
+    "flagged": false
+  },
+  {
+    "title": "The Social Network",
+    "genre": "Drama",
+    "description": "The story behind Facebook’s creation unfolds.",
+    "flagged": false
+  },
+  {
+    "title": "Whiplash",
+    "genre": "Drama",
+    "description": "A drummer pushes his limits under a brutal teacher.",
+    "flagged": true
+  },
+  {
+    "title": "La La Land",
+    "genre": "Romance",
+    "description": "An actress and a musician chase dreams in LA.",
+    "flagged": true
+  },
+  {
+    "title": "The Wolf of Wall Street",
+    "genre": "Biography",
+    "description": "A stockbroker rises and falls in excess.",
+    "flagged": true
+  },
+  {
+    "title": "Gone Girl",
+    "genre": "Thriller",
+    "description": "A man becomes the prime suspect in his wife’s disappearance.",
+    "flagged": false
+  },
+  {
+    "title": "The Big Short",
+    "genre": "Drama",
+    "description": "Investors profit by predicting the 2008 crash.",
+    "flagged": false
+  },
+  {
+    "title": "Se7en",
+    "genre": "Thriller",
+    "description": "Detectives hunt a killer using deadly sins.",
+    "flagged": false
+  },
+  {
+    "title": "The Silence of the Lambs",
+    "genre": "Thriller",
+    "description": "An FBI trainee seeks help from Hannibal Lecter.",
+    "flagged": false
+  },
+  {
+    "title": "Heat",
+    "genre": "Crime",
+    "description": "A thief and a detective collide in Los Angeles.",
+    "flagged": false
+  },
+  {
+    "title": "No Country for Old Men",
+    "genre": "Thriller",
+    "description": "A hunter finds money and attracts danger.",
+    "flagged": false
+  },
+  {
+    "title": "The Departed",
+    "genre": "Crime",
+    "description": "A mole and an undercover cop play cat and mouse.",
+    "flagged": false
+  },
+  {
+    "title": "12 Angry Men",
+    "genre": "Drama",
+    "description": "Jurors debate the fate of a boy on trial.",
+    "flagged": false
+  },
+  {
+    "title": "Goodfellas",
+    "genre": "Crime",
+    "description": "The rise and fall of a mob associate.",
+    "flagged": false
+  },
+  {
+    "title": "The Prestige",
+    "genre": "Drama",
+    "description": "Two magicians obsessively feud for supremacy.",
+    "flagged": false
+  },
+  {
+    "title": "Memento",
+    "genre": "Thriller",
+    "description": "A man with memory loss hunts his wife's killer.",
+    "flagged": false
+  },
+  {
+    "title": "The Truman Show",
+    "genre": "Drama",
+    "description": "A man discovers his entire life is a TV show.",
+    "flagged": false
+  },
+  {
+    "title": "Whisper of the Heart",
+    "genre": "Animation",
+    "description": "A girl discovers her passion through writing and friendship.",
+    "flagged": false
+  },
+  {
+    "title": "Spirited Away",
+    "genre": "Animation",
+    "description": "A girl navigates a world of spirits to save her parents.",
+    "flagged": false
+  },
+  {
+    "title": "My Neighbor Totoro",
+    "genre": "Animation",
+    "description": "Two sisters encounter forest spirits in rural Japan.",
+    "flagged": false
+  },
+  {
+    "title": "Howl's Moving Castle",
+    "genre": "Fantasy",
+    "description": "A girl is cursed and meets a wizard in a walking castle.",
+    "flagged": false
+  },
+  {
+    "title": "Princess Mononoke",
+    "genre": "Fantasy",
+    "description": "Humans and spirits clash over the fate of the forest.",
+    "flagged": false
+  },
+  {
+    "title": "Kubo and the Two Strings",
+    "genre": "Animation",
+    "description": "A boy embarks on a magical journey to defeat an evil spirit.",
+    "flagged": false
+  },
+  {
+    "title": "The Great Gatsby",
+    "genre": "Drama",
+    "description": "A man pursues love and excess in the Roaring Twenties.",
+    "flagged": false
+  },
+  {
+    "title": "Catch Me If You Can",
+    "genre": "Biography",
+    "description": "A con artist eludes the FBI while living a double life.",
+    "flagged": false
+  },
+  {
+    "title": "The Revenant",
+    "genre": "Adventure",
+    "description": "A frontiersman seeks revenge after being left for dead.",
+    "flagged": false
+  },
+  {
+    "title": "Slumdog Millionaire",
+    "genre": "Drama",
+    "description": "A young man recounts his life story after winning a quiz show.",
+    "flagged": false
+  },
+  {
+    "title": "Life of Pi",
+    "genre": "Adventure",
+    "description": "A boy survives a shipwreck with a Bengal tiger.",
+    "flagged": false
+  },
+  {
+    "title": "The Imitation Game",
+    "genre": "Biography",
+    "description": "Alan Turing helps crack the Enigma code.",
+    "flagged": false
+  },
+  {
+    "title": "Spotlight",
+    "genre": "Drama",
+    "description": "Journalists uncover a major scandal in the Church.",
+    "flagged": false
+  },
+  {
+    "title": "Room",
+    "genre": "Drama",
+    "description": "A woman and her son escape captivity and rebuild their lives.",
+    "flagged": false
+  },
+  {
+    "title": "Birdman",
+    "genre": "Drama",
+    "description": "An actor struggles to revive his career with a Broadway play.",
+    "flagged": false
+  },
+  {
+    "title": "The Grand Budapest Hotel",
+    "genre": "Comedy",
+    "description": "The adventures of a hotel concierge and his protégé.",
+    "flagged": false
+  },
+  {
+    "title": "The Fantastic Mr. Fox",
+    "genre": "Animation",
+    "description": "A clever fox plans a heist against farmers.",
+    "flagged": false
+  },
+  {
+    "title": "The Hateful Eight",
+    "genre": "Crime",
+    "description": "Bounty hunters face tension in a remote cabin during a blizzard.",
+    "flagged": false
+  },
+  {
+    "title": "Django Unchained",
+    "genre": "Western",
+    "description": "A freed slave teams up with a bounty hunter to save his wife.",
+    "flagged": false
+  },
+  {
+    "title": "Inglourious Basterds",
+    "genre": "War",
+    "description": "Allied soldiers plan to assassinate Nazi leaders.",
+    "flagged": false
+  },
+  {
+    "title": "12 Years a Slave",
+    "genre": "Biography",
+    "description": "A free man is kidnapped and sold into slavery.",
+    "flagged": false
+  },
+  {
+    "title": "American History X",
+    "genre": "Drama",
+    "description": "A former neo-nazi tries to prevent his brother from following the same path.",
+    "flagged": false
+  },
+  {
+    "title": "Requiem for a Dream",
+    "genre": "Drama",
+    "description": "Addiction destroys the lives of four people.",
+    "flagged": false
+  },
+  {
+    "title": "Donnie Darko",
+    "genre": "Sci-Fi",
+    "description": "A troubled teenager experiences visions of a mysterious rabbit.",
+    "flagged": false
+  },
+  {
+    "title": "Eternal Sunshine of the Spotless Mind",
+    "genre": "Romance",
+    "description": "A couple erases memories of each other after a painful breakup.",
+    "flagged": false
+  },
+  {
+    "title": "Her",
+    "genre": "Romance",
+    "description": "A man falls in love with an operating system.",
+    "flagged": false
+  },
+  {
+    "title": "Ex Machina",
+    "genre": "Sci-Fi",
+    "description": "A programmer interacts with a highly advanced AI.",
+    "flagged": false
+  },
+  {
+    "title": "Annihilation",
+    "genre": "Sci-Fi",
+    "description": "A team investigates a mysterious environmental phenomenon.",
+    "flagged": false
+  },
+  {
+    "title": "Arrival",
+    "genre": "Sci-Fi",
+    "description": "A linguist communicates with alien visitors to prevent war.",
+    "flagged": false
+  },
+  {
+    "title": "The Shape of Water",
+    "genre": "Fantasy",
+    "description": "A mute woman forms a bond with a mysterious creature.",
+    "flagged": false
+  },
+  {
+    "title": "Pan's Labyrinth",
+    "genre": "Fantasy",
+    "description": "A girl discovers a magical labyrinth during war-torn Spain.",
+    "flagged": false
+  },
+  {
+    "title": "The Witch",
+    "genre": "Horror",
+    "description": "A family in 1630s New England faces dark forces.",
+    "flagged": false
+  },
+  {
+    "title": "It Follows",
+    "genre": "Horror",
+    "description": "A supernatural entity relentlessly pursues its victims.",
+    "flagged": false
+  },
+  {
+    "title": "Get Out",
+    "genre": "Horror",
+    "description": "A man uncovers terrifying secrets when visiting his girlfriend’s family.",
+    "flagged": false
+  },
+  {
+    "title": "Us",
+    "genre": "Horror",
+    "description": "A family faces terrifying doppelgängers.",
+    "flagged": false
+  },
+  {
+    "title": "The Lighthouse",
+    "genre": "Horror",
+    "description": "Two lighthouse keepers descend into madness on a remote island.",
+    "flagged": false
+  },
+  {
+    "title": "Doctor Zhivago",
+    "genre": "Romance",
+    "description": "A love story unfolds during the Russian Revolution.",
+    "flagged": false
+  },
+  {
+    "title": "Casablanca",
+    "genre": "Romance",
+    "description": "A man must choose between love and duty in WWII.",
+    "flagged": false
+  },
+  {
+    "title": "Singin’ in the Rain",
+    "genre": "Musical",
+    "description": "Actors navigate the transition from silent films to talkies.",
+    "flagged": false
+  },
+  {
+    "title": "West Side Story",
+    "genre": "Musical",
+    "description": "Rival gangs clash as two lovers struggle to be together.",
+    "flagged": false
+  },
+  {
+    "title": "Chicago",
+    "genre": "Musical",
+    "description": "Ambitious women navigate fame, crime, and the justice system.",
+    "flagged": false
+  },
+  {
+    "title": "Moulin Rouge!",
+    "genre": "Musical",
+    "description": "A poet falls in love with a cabaret star.",
+    "flagged": false
+  },
+  {
+    "title": "The Sound of Music",
+    "genre": "Musical",
+    "description": "A governess brings music and joy to a family during the Nazi occupation.",
+    "flagged": false
+  },
+  {
+    "title": "Amélie",
+    "genre": "Romance",
+    "description": "A whimsical woman improves the lives of those around her in Paris.",
+    "flagged": false
+  },
+  {
+    "title": "The Intouchables",
+    "genre": "Biography",
+    "description": "A wealthy quadriplegic bonds with his caregiver.",
+    "flagged": false
+  },
+  {
+    "title": "Slumdog Millionaire",
+    "genre": "Drama",
+    "description": "A young man recounts his life story after winning a quiz show.",
+    "flagged": false
+  },
+  {
+    "title": "The Pianist",
+    "genre": "Biography",
+    "description": "A pianist struggles to survive WWII in Poland.",
+    "flagged": false
+  },
+  {
+    "title": "Schindler's List",
+    "genre": "Biography",
+    "description": "A man saves Jews during the Holocaust at great personal risk.",
+    "flagged": false
+  },
+  {
+    "title": "The Green Mile",
+    "genre": "Drama",
+    "description": "A death row guard witnesses supernatural events.",
+    "flagged": false
+  },
+  {
+    "title": "The Sixth Sense",
+    "genre": "Thriller",
+    "description": "A boy communicates with the dead.",
+    "flagged": false
+  },
+  {
+    "title": "Unforgiven",
+    "genre": "Western",
+    "description": "An aging outlaw takes on one last job.",
+    "flagged": false
+  },
+  {
+    "title": "No Time to Die",
+    "genre": "Action",
+    "description": "James Bond comes out of retirement to face a new threat.",
+    "flagged": false
+  },
+  {
+    "title": "Skyfall",
+    "genre": "Action",
+    "description": "Bond investigates a villain targeting MI6.",
+    "flagged": false
+  },
+  {
+    "title": "Casino Royale",
+    "genre": "Action",
+    "description": "Bond seeks justice in a high-stakes poker game.",
+    "flagged": false
+  },
+  {
+    "title": "Spectre",
+    "genre": "Action",
+    "description": "Bond confronts the sinister organization SPECTRE.",
+    "flagged": false
+  },
+  {
+    "title": "Kingsman: The Secret Service",
+    "genre": "Action",
+    "description": "A spy recruits a young man into a secret organization.",
+    "flagged": false
+  }
+]
