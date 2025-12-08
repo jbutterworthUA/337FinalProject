@@ -126,6 +126,30 @@ app.post("/login", (req, res) => {
     return res.redirect(`/login?error=iv`);
 });
 
+// Add movie to watchlist (flag = true)
+app.post("/addToWatchlist", (req, res) => {
+    const { user, title } = req.body;
+    const filePath = `databases/user_catalogs/${user}_catalog.json`;
+
+    fs.readFile(filePath, "utf8", (err, data) => {
+        if (err) return res.status(500).json({ error: "Failed to read file" });
+
+        let catalog = JSON.parse(data);
+
+        for (let movie of catalog) {
+            if (movie.title === title) {
+                movie.flagged = true;
+            }
+        }
+
+        fs.writeFile(filePath, JSON.stringify(catalog, null, 2), err => {
+            if (err) return res.status(500).json({ error: "Failed to save file" });
+
+            res.json({ message: `${title} added to watchlist.` });
+        });
+    });
+});
+
 // Login needs a GET bc the redirect with error msg will do a GET request.
 app.get("/login", (req, res) => {
     res.sendFile(path.join(__dirname, "login.html"));

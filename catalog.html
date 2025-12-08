@@ -17,6 +17,7 @@
         <div class="menu-bar">
             <a href="./start.html">Log Out</a>
             <a href="./watchlist.html">Your Watchlist</a>
+            <a href="./about.html">About Page</a>
         </div>
         
         <h1>Movie Catalog</h1>
@@ -24,7 +25,7 @@
         <table>
             <thead>
                 <tr>
-                    <th>Title</th><th>Genre</th><th>Description</th>
+                    <th>Title</th><th>Genre</th><th>Description</th><th>Add to Watchlist</th>
                 </tr>
             </thead>
             <tbody id="myTable"></tbody>
@@ -46,12 +47,31 @@
                                 const row = document.createElement("tr");
                             row.innerHTML = `
                                 <td>${movieObj.title}</td><td>${movieObj.genre}</td><td>${movieObj.description}</td>
+                                <td>
+                                        <button onclick="addToWatchlist('${movieObj.title}')">
+                                            Add to Watchlist
+                                        </button>
+                                </td>
                             `;
                             myTable.appendChild(row);
                             } 
                         }
                     })
                     .catch(error => console.error("There was an error fetching the catalog."));
+            }
+
+            function addToWatchlist(title) {
+                const currentUser = localStorage.getItem("currentUser");
+
+                fetch("/addToWatchlist", {
+                    method: "POST",
+                    headers: {"Content-Type": "application/json"},
+                    body: JSON.stringify({ user: currentUser, title })
+                })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data.message);
+                });
             }
             fillTable();
         </script>
