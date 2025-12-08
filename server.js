@@ -150,6 +150,43 @@ app.post("/addToWatchlist", (req, res) => {
     });
 });
 
+// Remove movie from watchlist and record rating
+app.post("/removeFromWatchlist", (req, res) => {
+    const { user, title, rating } = req.body;
+    const filePath = `databases/user_catalogs/${user}_catalog.json`;
+
+    fs.readFile(filePath, "utf8", (err, data) => {
+        if (err) { 
+            return res.status(500).json({ error: "Failed to read file" }); 
+        }
+
+        let catalog = JSON.parse(data);
+        let found = false;
+
+        for (let movie of catalog) {
+            if (movie.title === title) {
+                movie.flagged = false;
+                movie.rating = rating;
+                found = true;
+                break;
+            }
+        }
+
+        if (!found) {
+            return res.status(404).json({ error: "Movie not found" });
+        }
+
+        fs.writeFile(filePath, JSON.stringify(catalog, null, 2), err => {
+            if (err) { 
+                return res.status(500).json({ error: "Failed to save file" });
+            }
+
+            res.json({ message: `${title} removed from watchlist and rated ${rating}.` });
+        });
+    });
+});
+
+
 // Login needs a GET bc the redirect with error msg will do a GET request.
 app.get("/login", (req, res) => {
     res.sendFile(path.join(__dirname, "login.html"));

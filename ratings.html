@@ -21,10 +21,38 @@
             <tr>
                 <th>Title</th><th>Description</th><th>Rating</th>
             </tr>
+            <tbody id="ratedMoviesTable"></tbody>
         </table>
     </body>
 
     <script>
+
+        function fillTable() {
+                const currentUser = localStorage.getItem("currentUser");
+
+                fetch(`/databases/user_catalogs/${currentUser}_catalog.json`)
+                    .then(res => res.json())
+                    .then(catalog => {
+                        const table = document.getElementById("ratedMoviesTable");
+
+                        for (let movie of catalog) {
+                            if (movie.flagged) {
+                                const row = document.createElement("tr");
+                                
+                                row.innerHTML = `
+                                    <td>${movie.title}</td>
+                                    <td>${movie.description}</td>
+                                    <td>${movie.rating}</td>
+                                `;
+
+                                table.appendChild(row);
+                            }
+                        }
+                    })
+                    .catch(err => console.error("Error loading watchlist:", err));
+            }
+
+            fillTable(); 
 
     </script>
 
