@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Watchlist Bar Chart</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- style varies here bcuz it makes it easier to see -->
+    <style>
+        body {
+            background: #111;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .bar-container {
+            width: 600px;
+            margin: 10px 0;
+        }
+
+        .bar-label {
+            margin-bottom: 4px;
+        }
+
+        .bar {
+            height: 25px;
+            background: #326a34;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-bar">
+        <a href="./start.html">Log Out</a>
+        <a href="./catalog.html">Movie Catalog</a>
+        <a href="./watchlist.html">Your Watchlist</a>
+        <a href="./ratings.html">Rated Movies</a>
+        <a href="./visualization.html">Visualization</a>
+    </div>
+
+    <h1>Watchlist Genre Bar Chart</h1>
+    <p> Visualizes your fav genres!</p>
+
+    <div id="chart"></div>
+
+    <script>
+        const currentUser = localStorage.getItem("currentUser");
+
+        fetch(`/databases/user_catalogs/${currentUser}_catalog.json`)
+            .then(res => res.json())
+            .then(data => {
+                const movies = data.filter(m => m.flagged);
+
+                // Count how many per genre
+                const genreCounts = {};
+                movies.forEach(m => {
+                    genreCounts[m.genre] = (genreCounts[m.genre] || 0) + 1;
+                });
+
+                // Find max count so we can scale bars (dataset > 1000)
+                let minCount = 1000;
+                let maxCount = -1;
+
+                for (const genre in genreCounts) {
+                    const count = genreCounts[genre];
+                    if (count < minCount) minCount = count;
+                    if (count > maxCount) maxCount = count;
+                }
+                const chart = document.getElementById("chart");
+
+                for (const genre in genreCounts) {
+                    const count = genreCounts[genre];
+                    const widthPercent = (count / maxCount) * 100;
+
+                    // SIMPLE 3 COLOR SYSTEM (close as i could find to imdb colrs)
+                    let color;
+                    if (count === maxCount) {
+                        color = "#4caf50"; // green
+                    } else if (count === minCount) {
+                        color = "#ff4d4d"; // red
+                    } else {
+                        color = "#ffcc00"; // yellow
+                    }
+
+                    chart.innerHTML += `
+                        <div class="bar-container">
+                            <div class="bar-label">${genre} (${count})</div>
+                            <div class="bar" style="width:${widthPercent}%; background:${color}"></div>
+                        </div>
+                    `;
+                }
+
+            });
+    </script>
+
+</body>
+</html>
